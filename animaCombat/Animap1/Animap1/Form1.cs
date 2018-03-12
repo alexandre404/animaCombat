@@ -17,19 +17,57 @@ namespace Animap1
             InitializeComponent();
         }
 
-        private void textBox1_TextChanged(object sender, EventArgs e)
-        {
+     
 
+        private void TxtResultat_Click(object sender, EventArgs e)
+        {
+            int Res = 0;
+            
+                Res = Attaque();
+            
+            this.txtResultat.Text = Res.ToString();
         }
 
-        private void comboBox2_SelectedIndexChanged(object sender, EventArgs e)
+        private int Attaque()
         {
+            int Res = 0;
+            Res = +Convert.ToInt32(txtAtt.Text);
+            if (CbCharger.Checked)
+            {
+                Res = Res+10;
+            }
+            if(CbDegainer.Checked)
+            {
+                Res = Res-25;
+            }
+            if(CbRenverse.Checked)
+            {
+                Res = Res-30;
+            }
+            if(CbSurpris.Checked)
+            {
+                Res = 0;
+                return Res;
+            }
+            if (CbCombattant.Checked)
+            {
+                if (CbArme.Text == "Arme grande")
+                {
+                    Res = Res - 40;
+                }
 
-        }
+            }
+            if(CbEnJoue.Checked)
+            {
+                Res = Res - 20;
+            }
 
-        private void radioButton1_CheckedChanged(object sender, EventArgs e)
-        {
-
+            if(CbPosiSuperieur.Checked)
+            {
+                Res = Res + 20;
+            }
+                return Res;
+            
         }
     }
 }

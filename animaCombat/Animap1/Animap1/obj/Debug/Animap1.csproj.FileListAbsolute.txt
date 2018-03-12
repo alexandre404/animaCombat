@@ -18,3 +18,13 @@ C:\Users\user1\Desktop\animaCombat\Animap1\Animap1\obj\Debug\Animap1.csproj.Gene
 C:\Users\user1\Desktop\animaCombat\Animap1\Animap1\obj\Debug\Animap1.csproj.CoreCompileInputs.cache
 C:\Users\user1\Desktop\animaCombat\Animap1\Animap1\obj\Debug\Animap1.exe
 C:\Users\user1\Desktop\animaCombat\Animap1\Animap1\obj\Debug\Animap1.pdb
+C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\bin\Debug\Animap1.exe.config
+C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\bin\Debug\Animap1.exe
+C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\bin\Debug\Animap1.pdb
+C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\obj\Debug\Animap1.csprojResolveAssemblyReference.cache
+C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\obj\Debug\Animap1.Form1.resources
+C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\obj\Debug\Animap1.Properties.Resources.resources
+C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\obj\Debug\Animap1.csproj.GenerateResource.cache
+C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\obj\Debug\Animap1.csproj.CoreCompileInputs.cache
+C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\obj\Debug\Animap1.exe
+C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\obj\Debug\Animap1.pdb
