@@ -58,6 +58,11 @@
             this.label3 = new System.Windows.Forms.Label();
             this.CbArme = new System.Windows.Forms.ComboBox();
             this.BtDefense = new System.Windows.Forms.Button();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NdAttaque)).BeginInit();
@@ -71,20 +76,22 @@
             this.txtAtt.Size = new System.Drawing.Size(143, 20);
             this.txtAtt.TabIndex = 0;
             this.txtAtt.Text = "0";
+            
             // 
             // cbTaille
             // 
+            this.cbTaille.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbTaille.FormattingEnabled = true;
             this.cbTaille.Items.AddRange(new object[] {
             "minuscule",
             "petit",
             "taille normal",
             "grande"});
-            this.cbTaille.Location = new System.Drawing.Point(22, 27);
+            this.cbTaille.Location = new System.Drawing.Point(48, 26);
             this.cbTaille.Name = "cbTaille";
-            this.cbTaille.Size = new System.Drawing.Size(152, 21);
+            this.cbTaille.Size = new System.Drawing.Size(135, 21);
             this.cbTaille.TabIndex = 2;
-            this.cbTaille.Text = "taille normal";
+            this.cbTaille.SelectedIndexChanged += new System.EventHandler(this.cbTaille_SelectedIndexChanged);
             // 
             // label1
             // 
@@ -97,19 +104,21 @@
             // 
             // cbPosition
             // 
+            this.cbPosition.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbPosition.FormattingEnabled = true;
             this.cbPosition.Items.AddRange(new object[] {
             "dans le dos du personnage",
             "dans le flanc du personnage",
             "face au personnage"});
-            this.cbPosition.Location = new System.Drawing.Point(22, 61);
+            this.cbPosition.Location = new System.Drawing.Point(48, 61);
             this.cbPosition.Name = "cbPosition";
-            this.cbPosition.Size = new System.Drawing.Size(152, 21);
+            this.cbPosition.Size = new System.Drawing.Size(135, 21);
             this.cbPosition.TabIndex = 4;
-            this.cbPosition.Text = "face au personnage";
+            this.cbPosition.SelectedIndexChanged += new System.EventHandler(this.cbPosition_SelectedIndexChanged);
             // 
             // cbVol
             // 
+            this.cbVol.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbVol.FormattingEnabled = true;
             this.cbVol.Items.AddRange(new object[] {
             "Perso en lévitation",
@@ -120,7 +129,7 @@
             this.cbVol.Name = "cbVol";
             this.cbVol.Size = new System.Drawing.Size(143, 21);
             this.cbVol.TabIndex = 5;
-            this.cbVol.Text = "Perso au sol";
+            this.cbVol.SelectedIndexChanged += new System.EventHandler(this.cbVol_SelectedIndexChanged);
             // 
             // rbEsquive
             // 
@@ -131,6 +140,7 @@
             this.rbEsquive.TabIndex = 6;
             this.rbEsquive.Text = "Esquive";
             this.rbEsquive.UseVisualStyleBackColor = true;
+            this.rbEsquive.CheckedChanged += new System.EventHandler(this.rbEsquive_CheckedChanged);
             // 
             // rbPare
             // 
@@ -141,6 +151,7 @@
             this.rbPare.TabIndex = 7;
             this.rbPare.Text = "pare";
             this.rbPare.UseVisualStyleBackColor = true;
+            this.rbPare.CheckedChanged += new System.EventHandler(this.rbPare_CheckedChanged);
             // 
             // rbAttaque
             // 
@@ -153,9 +164,11 @@
             this.rbAttaque.TabStop = true;
             this.rbAttaque.Text = "attaque";
             this.rbAttaque.UseVisualStyleBackColor = true;
+            this.rbAttaque.CheckedChanged += new System.EventHandler(this.rbAttaque_CheckedChanged);
             // 
             // cbVision
             // 
+            this.cbVision.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbVision.FormattingEnabled = true;
             this.cbVision.Items.AddRange(new object[] {
             "Cécité partielle",
@@ -165,10 +178,11 @@
             this.cbVision.Name = "cbVision";
             this.cbVision.Size = new System.Drawing.Size(143, 21);
             this.cbVision.TabIndex = 10;
-            this.cbVision.Text = "Vision normal";
+            this.cbVision.SelectedIndexChanged += new System.EventHandler(this.cbVision_SelectedIndexChanged);
             // 
             // cbParalisie
             // 
+            this.cbParalisie.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.cbParalisie.FormattingEnabled = true;
             this.cbParalisie.Items.AddRange(new object[] {
             "Paralysie légère",
@@ -179,10 +193,13 @@
             this.cbParalisie.Name = "cbParalisie";
             this.cbParalisie.Size = new System.Drawing.Size(143, 21);
             this.cbParalisie.TabIndex = 11;
-            this.cbParalisie.Text = "liberté de mouvement";
+            this.cbParalisie.SelectedIndexChanged += new System.EventHandler(this.cbParalisie_SelectedIndexChanged);
             // 
             // groupBox1
             // 
+            this.groupBox1.Controls.Add(this.label6);
+            this.groupBox1.Controls.Add(this.label7);
+            this.groupBox1.Controls.Add(this.label8);
             this.groupBox1.Controls.Add(this.CbCombattant);
             this.groupBox1.Controls.Add(this.CbEchec);
             this.groupBox1.Controls.Add(this.CbCharger);
@@ -213,6 +230,7 @@
             this.CbCombattant.TabIndex = 20;
             this.CbCombattant.Text = "Combattant dans un espace réduit";
             this.CbCombattant.UseVisualStyleBackColor = true;
+            this.CbCombattant.CheckedChanged += new System.EventHandler(this.CbCombattant_CheckedChanged);
             // 
             // CbEchec
             // 
@@ -223,6 +241,7 @@
             this.CbEchec.TabIndex = 26;
             this.CbEchec.Text = "Echec Critique";
             this.CbEchec.UseVisualStyleBackColor = true;
+            this.CbEchec.CheckedChanged += new System.EventHandler(this.CbEchec_CheckedChanged);
             // 
             // CbCharger
             // 
@@ -233,6 +252,7 @@
             this.CbCharger.TabIndex = 27;
             this.CbCharger.Text = "Vient de charger";
             this.CbCharger.UseVisualStyleBackColor = true;
+            this.CbCharger.CheckedChanged += new System.EventHandler(this.CbCharger_CheckedChanged);
             // 
             // cbReusite
             // 
@@ -243,6 +263,7 @@
             this.cbReusite.TabIndex = 25;
             this.cbReusite.Text = "Réussite critique";
             this.cbReusite.UseVisualStyleBackColor = true;
+            this.cbReusite.CheckedChanged += new System.EventHandler(this.cbReusite_CheckedChanged);
             // 
             // CbEnJoue
             // 
@@ -253,6 +274,7 @@
             this.CbEnJoue.TabIndex = 24;
             this.CbEnJoue.Text = "Est en joue";
             this.CbEnJoue.UseVisualStyleBackColor = true;
+            this.CbEnJoue.CheckedChanged += new System.EventHandler(this.CbEnJoue_CheckedChanged);
             // 
             // CbPosiSuperieur
             // 
@@ -263,6 +285,7 @@
             this.CbPosiSuperieur.TabIndex = 23;
             this.CbPosiSuperieur.Text = "Position supérieur";
             this.CbPosiSuperieur.UseVisualStyleBackColor = true;
+            this.CbPosiSuperieur.CheckedChanged += new System.EventHandler(this.CbPosiSuperieur_CheckedChanged);
             // 
             // CbSurpris
             // 
@@ -273,6 +296,7 @@
             this.CbSurpris.TabIndex = 22;
             this.CbSurpris.Text = "Surpris";
             this.CbSurpris.UseVisualStyleBackColor = true;
+            this.CbSurpris.CheckedChanged += new System.EventHandler(this.CbSurpris_CheckedChanged);
             // 
             // CbRenverse
             // 
@@ -283,6 +307,7 @@
             this.CbRenverse.TabIndex = 21;
             this.CbRenverse.Text = "Renversé";
             this.CbRenverse.UseVisualStyleBackColor = true;
+            this.CbRenverse.CheckedChanged += new System.EventHandler(this.CbRenverse_CheckedChanged);
             // 
             // CbDegainer
             // 
@@ -293,15 +318,18 @@
             this.CbDegainer.TabIndex = 19;
             this.CbDegainer.Text = "Vient de dégainer";
             this.CbDegainer.UseVisualStyleBackColor = true;
+            this.CbDegainer.CheckedChanged += new System.EventHandler(this.CbDegainer_CheckedChanged);
             // 
             // groupBox2
             // 
+            this.groupBox2.Controls.Add(this.label4);
+            this.groupBox2.Controls.Add(this.label5);
             this.groupBox2.Controls.Add(this.cbEncaiss);
             this.groupBox2.Controls.Add(this.cbTaille);
             this.groupBox2.Controls.Add(this.cbPosition);
-            this.groupBox2.Location = new System.Drawing.Point(21, 25);
+            this.groupBox2.Location = new System.Drawing.Point(12, 25);
             this.groupBox2.Name = "groupBox2";
-            this.groupBox2.Size = new System.Drawing.Size(200, 132);
+            this.groupBox2.Size = new System.Drawing.Size(203, 132);
             this.groupBox2.TabIndex = 14;
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Adversaire";
@@ -379,6 +407,7 @@
             // 
             // CbArme
             // 
+            this.CbArme.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.CbArme.FormattingEnabled = true;
             this.CbArme.Items.AddRange(new object[] {
             "Arme petite",
@@ -388,7 +417,7 @@
             this.CbArme.Name = "CbArme";
             this.CbArme.Size = new System.Drawing.Size(152, 21);
             this.CbArme.TabIndex = 25;
-            this.CbArme.Text = "Arme moyenne";
+            this.CbArme.SelectedIndexChanged += new System.EventHandler(this.CbArme_SelectedIndexChanged);
             // 
             // BtDefense
             // 
@@ -398,6 +427,51 @@
             this.BtDefense.TabIndex = 26;
             this.BtDefense.Text = "Défense spécial";
             this.BtDefense.UseVisualStyleBackColor = true;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(0, 29);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Taille";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(0, 64);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Position";
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(49, 60);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(26, 13);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Vue";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(35, 84);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(49, 13);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "Paralysie";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(49, 114);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(22, 13);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Vol";
             // 
             // Form1
             // 
@@ -419,6 +493,7 @@
             this.Controls.Add(this.rbAttaque);
             this.Name = "Form1";
             this.Text = "Form1";
+            this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
             this.groupBox2.ResumeLayout(false);
@@ -462,6 +537,11 @@
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.ComboBox CbArme;
         private System.Windows.Forms.Button BtDefense;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label label5;
     }
 }
 
