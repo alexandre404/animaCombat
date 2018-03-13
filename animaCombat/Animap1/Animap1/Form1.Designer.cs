@@ -39,6 +39,9 @@
             this.cbVision = new System.Windows.Forms.ComboBox();
             this.cbParalisie = new System.Windows.Forms.ComboBox();
             this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.label7 = new System.Windows.Forms.Label();
+            this.label8 = new System.Windows.Forms.Label();
             this.CbCombattant = new System.Windows.Forms.CheckBox();
             this.CbEchec = new System.Windows.Forms.CheckBox();
             this.CbCharger = new System.Windows.Forms.CheckBox();
@@ -49,6 +52,8 @@
             this.CbRenverse = new System.Windows.Forms.CheckBox();
             this.CbDegainer = new System.Windows.Forms.CheckBox();
             this.groupBox2 = new System.Windows.Forms.GroupBox();
+            this.label4 = new System.Windows.Forms.Label();
+            this.label5 = new System.Windows.Forms.Label();
             this.cbEncaiss = new System.Windows.Forms.CheckBox();
             this.btAttSpe = new System.Windows.Forms.Button();
             this.txtResultat = new System.Windows.Forms.TextBox();
@@ -58,11 +63,6 @@
             this.label3 = new System.Windows.Forms.Label();
             this.CbArme = new System.Windows.Forms.ComboBox();
             this.BtDefense = new System.Windows.Forms.Button();
-            this.label4 = new System.Windows.Forms.Label();
-            this.label5 = new System.Windows.Forms.Label();
-            this.label6 = new System.Windows.Forms.Label();
-            this.label7 = new System.Windows.Forms.Label();
-            this.label8 = new System.Windows.Forms.Label();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NdAttaque)).BeginInit();
@@ -76,7 +76,6 @@
             this.txtAtt.Size = new System.Drawing.Size(143, 20);
             this.txtAtt.TabIndex = 0;
             this.txtAtt.Text = "0";
-            
             // 
             // cbTaille
             // 
@@ -221,6 +220,33 @@
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Personnage";
             // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(49, 60);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(26, 13);
+            this.label6.TabIndex = 29;
+            this.label6.Text = "Vue";
+            // 
+            // label7
+            // 
+            this.label7.AutoSize = true;
+            this.label7.Location = new System.Drawing.Point(35, 84);
+            this.label7.Name = "label7";
+            this.label7.Size = new System.Drawing.Size(49, 13);
+            this.label7.TabIndex = 30;
+            this.label7.Text = "Paralysie";
+            // 
+            // label8
+            // 
+            this.label8.AutoSize = true;
+            this.label8.Location = new System.Drawing.Point(49, 114);
+            this.label8.Name = "label8";
+            this.label8.Size = new System.Drawing.Size(22, 13);
+            this.label8.TabIndex = 31;
+            this.label8.Text = "Vol";
+            // 
             // CbCombattant
             // 
             this.CbCombattant.AutoSize = true;
@@ -334,6 +360,24 @@
             this.groupBox2.TabStop = false;
             this.groupBox2.Text = "Adversaire";
             // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Location = new System.Drawing.Point(0, 29);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(32, 13);
+            this.label4.TabIndex = 27;
+            this.label4.Text = "Taille";
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Location = new System.Drawing.Point(0, 64);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(44, 13);
+            this.label5.TabIndex = 28;
+            this.label5.Text = "Position";
+            // 
             // cbEncaiss
             // 
             this.cbEncaiss.AutoSize = true;
@@ -352,6 +396,7 @@
             this.btAttSpe.TabIndex = 16;
             this.btAttSpe.Text = "Attaque spécial";
             this.btAttSpe.UseVisualStyleBackColor = true;
+            this.btAttSpe.Click += new System.EventHandler(this.btAttSpe_Click);
             // 
             // txtResultat
             // 
@@ -427,51 +472,7 @@
             this.BtDefense.TabIndex = 26;
             this.BtDefense.Text = "Défense spécial";
             this.BtDefense.UseVisualStyleBackColor = true;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(0, 29);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(32, 13);
-            this.label4.TabIndex = 27;
-            this.label4.Text = "Taille";
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(0, 64);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(44, 13);
-            this.label5.TabIndex = 28;
-            this.label5.Text = "Position";
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(49, 60);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(26, 13);
-            this.label6.TabIndex = 29;
-            this.label6.Text = "Vue";
-            // 
-            // label7
-            // 
-            this.label7.AutoSize = true;
-            this.label7.Location = new System.Drawing.Point(35, 84);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(49, 13);
-            this.label7.TabIndex = 30;
-            this.label7.Text = "Paralysie";
-            // 
-            // label8
-            // 
-            this.label8.AutoSize = true;
-            this.label8.Location = new System.Drawing.Point(49, 114);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(22, 13);
-            this.label8.TabIndex = 31;
-            this.label8.Text = "Vol";
+            this.BtDefense.Click += new System.EventHandler(this.BtDefense_Click);
             // 
             // Form1
             // 

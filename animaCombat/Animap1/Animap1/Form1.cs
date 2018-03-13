@@ -117,6 +117,17 @@ namespace Animap1
             Choix();
         }
 
+        private void btAttSpe_Click(object sender, EventArgs e)
+        {
+            AttaqueSpecial test = new AttaqueSpecial();
+            test.Show();
+        }
+
+        private void BtDefense_Click(object sender, EventArgs e)
+        {
+            AttaqueSpecial test = new AttaqueSpecial();
+            test.Show();
+        }
 
         private void Choix()
         {
@@ -383,5 +394,6 @@ namespace Animap1
 
         }
 
+        
     }
 }

@@ -28,3 +28,4 @@ C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\obj\Debug\Animap1
 C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\obj\Debug\Animap1.csproj.CoreCompileInputs.cache
 C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\obj\Debug\Animap1.exe
 C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\obj\Debug\Animap1.pdb
+C:\Users\user1\Desktop\animaCombat\animaCombat\Animap1\Animap1\obj\Debug\Animap1.AttaqueSpecial.resources

@@ -45,6 +45,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="AttaqueSpecial.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="AttaqueSpecial.Designer.cs">
+      <DependentUpon>AttaqueSpecial.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DefenseSpeciale.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="DefenseSpeciale.Designer.cs">
+      <DependentUpon>DefenseSpeciale.cs</DependentUpon>
+    </Compile>
     <Compile Include="Fonctions.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
@@ -54,6 +66,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="AttaqueSpecial.resx">
+      <DependentUpon>AttaqueSpecial.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="DefenseSpeciale.resx">
+      <DependentUpon>DefenseSpeciale.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
