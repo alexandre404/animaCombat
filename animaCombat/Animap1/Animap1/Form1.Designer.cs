@@ -64,10 +64,15 @@
             this.CbArme = new System.Windows.Forms.ComboBox();
             this.BtDefense = new System.Windows.Forms.Button();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
+            this.corpsÀCorpsToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.distanceToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.magieToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
+            this.psychiqueToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.groupBox1.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NdAttaque)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.NdDefense)).BeginInit();
+            this.menuStrip1.SuspendLayout();
             this.SuspendLayout();
             // 
             // txtAtt
@@ -475,11 +480,40 @@
             // 
             // menuStrip1
             // 
+            this.menuStrip1.Items.AddRange(new System.Windows.Forms.ToolStripItem[] {
+            this.corpsÀCorpsToolStripMenuItem,
+            this.distanceToolStripMenuItem,
+            this.magieToolStripMenuItem,
+            this.psychiqueToolStripMenuItem});
             this.menuStrip1.Location = new System.Drawing.Point(0, 0);
             this.menuStrip1.Name = "menuStrip1";
             this.menuStrip1.Size = new System.Drawing.Size(805, 24);
             this.menuStrip1.TabIndex = 27;
             this.menuStrip1.Text = "menuStrip1";
+            // 
+            // corpsÀCorpsToolStripMenuItem
+            // 
+            this.corpsÀCorpsToolStripMenuItem.Name = "corpsÀCorpsToolStripMenuItem";
+            this.corpsÀCorpsToolStripMenuItem.Size = new System.Drawing.Size(91, 20);
+            this.corpsÀCorpsToolStripMenuItem.Text = "Corps à corps";
+            // 
+            // distanceToolStripMenuItem
+            // 
+            this.distanceToolStripMenuItem.Name = "distanceToolStripMenuItem";
+            this.distanceToolStripMenuItem.Size = new System.Drawing.Size(64, 20);
+            this.distanceToolStripMenuItem.Text = "Distance";
+            // 
+            // magieToolStripMenuItem
+            // 
+            this.magieToolStripMenuItem.Name = "magieToolStripMenuItem";
+            this.magieToolStripMenuItem.Size = new System.Drawing.Size(52, 20);
+            this.magieToolStripMenuItem.Text = "Magie";
+            // 
+            // psychiqueToolStripMenuItem
+            // 
+            this.psychiqueToolStripMenuItem.Name = "psychiqueToolStripMenuItem";
+            this.psychiqueToolStripMenuItem.Size = new System.Drawing.Size(73, 20);
+            this.psychiqueToolStripMenuItem.Text = "Psychique";
             // 
             // Form1
             // 
@@ -500,9 +534,8 @@
             this.Controls.Add(this.rbEsquive);
             this.Controls.Add(this.rbAttaque);
             this.Controls.Add(this.menuStrip1);
-            this.MainMenuStrip = this.menuStrip1;
             this.Name = "Form1";
-            this.Text = "Form1";
+            this.Text = "Corps à corps";
             this.Load += new System.EventHandler(this.Form1_Load);
             this.groupBox1.ResumeLayout(false);
             this.groupBox1.PerformLayout();
@@ -510,6 +543,8 @@
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.NdAttaque)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.NdDefense)).EndInit();
+            this.menuStrip1.ResumeLayout(false);
+            this.menuStrip1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -553,6 +588,10 @@
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.MenuStrip menuStrip1;
+        private System.Windows.Forms.ToolStripMenuItem corpsÀCorpsToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem distanceToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem magieToolStripMenuItem;
+        private System.Windows.Forms.ToolStripMenuItem psychiqueToolStripMenuItem;
     }
 }
 
