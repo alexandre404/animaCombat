@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.txtAtt = new System.Windows.Forms.TextBox();
             this.cbTaille = new System.Windows.Forms.ComboBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -534,6 +535,7 @@
             this.Controls.Add(this.rbEsquive);
             this.Controls.Add(this.rbAttaque);
             this.Controls.Add(this.menuStrip1);
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
             this.Name = "Form1";
             this.Text = "Corps à corps";
             this.Load += new System.EventHandler(this.Form1_Load);

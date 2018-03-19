@@ -3,7 +3,7 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.27130.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Animap1", "Animap1\Animap1.csproj", "{74E71C2E-A7B8-4935-AE1D-AFCBBFCC0D85}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AideAnima", "Animap1\AideAnima.csproj", "{74E71C2E-A7B8-4935-AE1D-AFCBBFCC0D85}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
